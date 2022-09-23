@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>HTML CheckPoint</title>
   </head>
   <body>
@@ -12,35 +13,93 @@
       <h1>GoMyCode Check Point</h1>
     </header>
     <!--Navigation bar-->
-    <nav>
-      <ul>
+    <nav class="nav">
+      <ul
+        style="
+          list-style-type: none;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        "
+      >
         <li><a href="#">Home</a></li>
+        <hr />
         <li><a href="#">About</a></li>
+        <hr />
         <li><a href="#">Work</a></li>
+        <hr />
         <li><a href="#">Resume</a></li>
+        <hr />
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <hr>
+    <hr />
     <section>
-      <p>About Section from the GMC</p>
-        <h2>My Name is Omar</h2>
-          <p>I'm new to the web developing</p>
-          <form>
-            <label>Name:</label>
+      <p>About <i>Section</i> from the GMC</p>
+      <a href="https://www.google.com/">Click Here to Google </a>
+      <h2>My Name is Omar</h2>
+      <p><b>I'm new to the web developing</b></p>
+      <!-- <form>
+            <label> First Name:</label>
             <input type="text" name="First Name" placeholder="type your name here"/>
           </br>
-            <label>Number:</label>
-            <input type="number" name="number" value="123456"/>
+            <label for="name">Number:</label>
+            <input type="number" name="number" value="123456" id = "name"/>
           </br>
-          <label>Birthdate</label>
+          <label>Birthdate:</label>
           <input type="date" name="birthday"/>
           <br>
-          <label>Password</label>
+          <label>Password:</label>
           <input type="Password" name="password"/>
           <br>
           <input type="submit" value="Submit"/>
-          </form>
+          </form> -->
+    </section>
+    <hr />
+    <h3>GoMyCode DemoDay</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/4Bci5OUmpPs?autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen
+    >
+    </iframe>
+    <hr />
+    <section>
+      <h3>Work Section</h3>
+      <p>Below click to get into my GitHub's Profie</p>
+      <a href="https://github.com/OmarSh0/GoMyCode-Project"
+        >Click here for my github</a
+      >
+    </section>
+    <hr />
+    <section>
+      <h3>Resume Section</h3>
+      <img src="../images/cv1stpage.png" width="600" height="600" alt="My CV" />
+    </section>
+    <section>
+      <h3>Contact Us</h3>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="ex.Omar Rero" />
+        <!-- <br> -->
+          <label>Phone</label>
+        <input type="number" placeholder="ex. 0112233xxx" />
+        <br><br>
+        <label>Email</label>
+        <input type="text" placeholder="ex. omar@gmail.com" />
+        <label>Subject</label>
+        <input type="text" placeholder="ex. Reason" />
+        <br><br>
+        <label>Write something</label>
+        <br>
+        <textarea rows="10" cols="80" placeholder="Your Message"></textarea>
+        <br><br>
+        <input type="submit" value="Submit"/>
+
+      </form>
     </section>
   </body>
 </html>
